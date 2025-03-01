@@ -23,7 +23,7 @@ def format_docs(docs):
 loader = PyPDFLoader(r"250304_kb_addr.pdf")
 pages = loader.load_and_split()
 
-embedding_function = SentenceTransformer("jhgan/ko-sroberta-multitask")
+embedding_function = HuggingFaceEmbeddings(model_name="jhgan/ko-sroberta-multitask")
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
