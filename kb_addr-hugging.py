@@ -41,6 +41,7 @@ Use the following pieces of retrieved context to answer the question. \
 If you don't konw the answer, just say that you don't konw. \
 Keep the answer perfect. please use imogi with the answer.
 Please answer in Korean and use respectful language.
+내선 번호와 휴대폰은 더 자세히 검색해서 알려줘.
 {context}
 """
 
