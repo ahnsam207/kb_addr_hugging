@@ -16,3 +16,4 @@ nltk
 tiktoken
 python-docx
 docx2txt
+sentence-transformers
